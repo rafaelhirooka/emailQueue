@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +13,15 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::prefix('mails')->group(function() {
+    Route::prefix('app')->group(function() {
+        Route::post('/recover-password-token', 'AppController@recoverPasswordToken');
+        Route::post('/recover-password-token-ms', 'AppController@recoverPasswordTokenMS');
+        Route::post('/register', 'AppController@register');
+    });
+
+    Route::prefix('covenant')->group(function() {
+        Route::post('/register', 'CovenantController@register');
+        Route::post('/register-ms', 'CovenantController@registerMS');
+    });
 });
