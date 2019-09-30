@@ -25,8 +25,8 @@ class RecoverPasswordTokenMS extends Mailable
     }
 
     public function build() {
-        return $this->from(config('mail.from.address'), config('mail.from.name'))
-            ->replyTo(config('mail.reply_to'))
+        return $this->from(config('mail.ms.from.address'), config('mail.ms.from.name'))
+            ->replyTo(config('mail.ms.reply_to'))
             ->subject($this->subject)
             ->view('mails.app.recover-password-ms')
             ->with($this->details);

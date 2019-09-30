@@ -26,8 +26,8 @@ class Register extends Mailable
     }
 
     public function build() {
-        return $this->from(config('mail.from.address'), config('mail.from.name'))
-            ->replyTo(config('mail.reply_to'))
+        return $this->from(config('mail.vegas.from.address'), config('mail.vegas.from.name'))
+            ->replyTo(config('mail.vegas.reply_to'))
             ->subject($this->subject)
             ->view('mails.covenant.register')
             ->with($this->details);
