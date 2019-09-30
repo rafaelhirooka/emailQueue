@@ -57,15 +57,15 @@ return [
 
     'vegas' => [
         'from' => [
-            'address' => env('MAIL_VEGAS_FROM_NAME', 'hello@example.com'),
-            'name' => env('MAIL_VEGAS_FROM_ADDRESS', 'Example'),
+            'address' => env('MAIL_VEGAS_FROM_ADDRESS', 'hello@example.com'),
+            'name' => env('MAIL_VEGAS_FROM_NAME', 'Example'),
         ],
         'reply_to' => env('MAIL_VEGAS_REPLY_TO', 'hello@example.com'),
     ],
     'ms' => [
         'from' => [
-            'address' => env('MAIL_MS_FROM_NAME', 'hello@example.com'),
-            'name' => env('MAIL_MS_FROM_ADDRESS', 'Example'),
+            'address' => env('MAIL_MS_FROM_ADDRESS', 'hello@example.com'),
+            'name' => env('MAIL_MS_FROM_NAME', 'Example'),
         ],
         'reply_to' => env('MAIL_MS_REPLY_TO', 'hello@example.com'),
     ],
