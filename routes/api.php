@@ -13,15 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix('mails')->group(function() {
-    Route::prefix('app')->group(function() {
-        Route::post('/recover-password-token', 'AppController@recoverPasswordToken');
-        Route::post('/recover-password-token-ms', 'AppController@recoverPasswordTokenMS');
-        Route::post('/register', 'AppController@register');
-    });
+Route::middleware('access')->group(function() {
+    Route::prefix('mails')->group(function() {
+        Route::prefix('app')->group(function() {
+            Route::post('/recover-password-token', 'AppController@recoverPasswordToken');
+            Route::post('/recover-password-token-ms', 'AppController@recoverPasswordTokenMS');
+            Route::post('/register', 'AppController@register');
+        });
 
-    Route::prefix('covenant')->group(function() {
-        Route::post('/register', 'CovenantController@register');
-        Route::post('/register-ms', 'CovenantController@registerMS');
+        Route::prefix('covenant')->group(function() {
+            Route::post('/register', 'CovenantController@register');
+            Route::post('/register-ms', 'CovenantController@registerMS');
+        });
     });
 });
