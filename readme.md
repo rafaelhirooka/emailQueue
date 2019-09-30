@@ -1,10 +1,12 @@
-#Email Queue
+[![N|Solid](https://vegascard.com.br/img/logo-extenso.png)](https://nodesource.com/products/nsolid)
+
+# Email Queue
 
 Este é um serviço de envio de e-mail que utiliza o conceito de software de fila.
 
 O intuito desse é centralizar e padronizar todos os e-mails enviados pela Vegas Card.
 
-### Quem usa
+## Quem usa
 
 Alguns softwares da Vegas Card que utilizam este serviço:
 
