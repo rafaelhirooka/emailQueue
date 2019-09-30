@@ -1,4 +1,4 @@
-<p align="center"><img src="https://vegascard.com.br/img/logo-extenso.png" width="200"></p>
+![Vegas Card](https://vegascard.com.br/img/logo-extenso.png)
 
 ## Sobre
 
