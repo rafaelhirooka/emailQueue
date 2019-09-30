@@ -1,5 +1,3 @@
-[![N|Solid](https://vegascard.com.br/img/logo-extenso.png)](https://nodesource.com/products/nsolid)
-
 # Email Queue
 
 Este é um serviço de envio de e-mail que utiliza o conceito de software de fila.
