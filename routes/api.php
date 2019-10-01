@@ -12,16 +12,6 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::get('/teste', function() {
-    return view('mails.site.commercial-proposal', [
-        'company' => 'Empresa X',
-        'cnpj' => '48068453343504',
-        'employees' => '5',
-        'name' => 'Rafael',
-        'email' => 'rafael@vegascard.com.br',
-        'phone' => '9999999999999',
-    ]);
-});
 Route::middleware('access')->group(function() {
     Route::prefix('mails')->group(function() {
         Route::prefix('app')->group(function() {
