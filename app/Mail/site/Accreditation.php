@@ -21,6 +21,7 @@ class Accreditation extends Mailable
         'bank' => 'required',
         'accountType' => 'required',
         'favored' => 'required',
+        'favoredDocument' => 'required',
         'segment' => 'required',
         'capture' => 'required',
         'cep' => 'required',

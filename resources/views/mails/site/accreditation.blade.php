@@ -211,7 +211,7 @@
                                         <p>Banco: <strong>{{ $bank }}</strong></p>
                                         <p>Agência: <strong>{{ $agency }}</strong></p>
                                         <p>Conta: <strong>{{ $account }}</strong></p>
-                                        <p>Favorecido: <strong>{{ $favored ?? '' }}</strong></p>
+                                        <p>Favorecido: <strong>{{ $favored ?? '' }} - {{ $favoredDocument ?? '' }}</strong></p>
                                         <p>Tipo: <strong>{{ $accountType ?? '' }}</strong></p>
                                     </td>
                                 </tr>
