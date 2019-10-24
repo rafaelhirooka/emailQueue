@@ -13,12 +13,6 @@ class CovenantController extends Controller {
 
     use ApiResponser, EmailJob;
 
-    private $rules = [
-        'subject' => 'required',
-        'to' => 'required',
-        'data' => 'required'
-    ];
-
     public function register(Request $request) {
         $data = $this->prepare($request->all());
 
